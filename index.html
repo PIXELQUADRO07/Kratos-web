@@ -1,12 +1,12 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Kratos OS | A focused Linux experience</title>
+    <title>Kratos OS | Built from source, piece by piece</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Kratos OS is a focused, fast and approachable Linux distribution."
+      content="Kratos OS is a Linux distribution cross-compiled from source, with its own package manager and download client written in plain C."
     />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
@@ -28,75 +28,59 @@
     <main>
       <section class="hero page-width" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <p class="eyebrow">OPEN SOURCE / X86_64</p>
-          <h1 id="hero-title">Power without the noise.</h1>
+          <p class="tag"><span class="dot" aria-hidden="true"></span>x86_64, cross-compiled from source</p>
+          <h1 id="hero-title">A system you can read end to end.</h1>
           <p class="lead">
-            Kratos OS is a clean, deliberate Linux distribution for people who
-            want their computer to stay out of the way.
+            Kratos OS is built from the ground up: its own cross toolchain,
+            its own package format, its own HTTPS client. Nothing you can't
+            open and read.
           </p>
           <div class="hero-actions">
-            <a class="button button-primary" href="download.html"
-              >Download Kratos OS <span aria-hidden="true">&rarr;</span></a
-            >
+            <a class="button button-primary" href="download.html">Download Kratos OS</a>
             <a class="text-link" href="docs.html">Read the documentation</a>
           </div>
-          <p class="release-note">
-            <span class="status-dot" aria-hidden="true"></span>Built for x86_64
-            &middot; Rolling development release
-          </p>
         </div>
-        <div
-          class="hero-art"
-          role="img"
-          aria-label="Abstract Kratos OS interface preview"
-        >
-          <div class="art-top">
-            <span aria-hidden="true"></span><span aria-hidden="true"></span
-            ><span aria-hidden="true"></span><b>KRATOS_OS</b>
+        <div class="hero-panel">
+          <div class="panel-head">
+            <span>kpm build &middot; wpa_supplicant-2.12</span><b>x86_64-kratos-linux-gnu</b>
           </div>
-          <div class="art-terminal">
-            <p><i>kratos@system</i>:~$ fast, focused, yours</p>
-            <p class="muted">initializing a better desktop experience...</p>
-            <p>
-              <strong>ready.</strong
-              ><span class="cursor" aria-hidden="true"></span>
-            </p>
-          </div>
-          <div class="art-grid">
-            <span>01<br /><b>CORE</b></span
-            ><span>02<br /><b>CLARITY</b></span
-            ><span>03<br /><b>CONTROL</b></span>
-          </div>
+          <pre>
+  CC  <span class="path">../src/drivers/</span>driver_nl80211.c
+  CC  <span class="path">../src/l2_packet/</span>l2_packet_linux.c
+  LD  wpa_supplicant
+  LD  wpa_cli
+<span class="ok">[&#10003;]</span> Package built successfully.
+
+<span class="prompt">$</span> kratos install wpa_supplicant<span class="cursor" aria-hidden="true"></span></pre>
         </div>
       </section>
       <section class="principles page-width" aria-labelledby="principles-title">
         <div class="section-heading">
-          <p class="eyebrow">THE KRATOS APPROACH</p>
-          <h2 id="principles-title">Less friction. More room to make.</h2>
+          <p class="label">How it's put together</p>
+          <h2 id="principles-title">Three things Kratos OS won't hide from you.</h2>
         </div>
         <div class="feature-grid">
           <article>
-            <span class="feature-number">01</span>
-            <h3>Focused by default</h3>
+            <h3>A build you can inspect</h3>
             <p>
-              A considered base system gives you a fast start and a clear path
-              to make it your own.
+              Every package is a plain-text recipe: where the source comes
+              from, how it's compiled, what it depends on. No opaque binary
+              blobs you have to trust blindly.
             </p>
           </article>
           <article>
-            <span class="feature-number">02</span>
-            <h3>Built to be understood</h3>
+            <h3>Tools written in-house</h3>
             <p>
-              Simple tools, readable documentation and sensible choices keep the
-              system approachable.
+              The package fetcher, the installer, the repository client:
+              written from scratch in C for this system, not bolted on from
+              somewhere else.
             </p>
           </article>
           <article>
-            <span class="feature-number">03</span>
-            <h3>Yours to shape</h3>
+            <h3>A desktop that stays out of the way</h3>
             <p>
-              Kratos OS stays open, transparent and flexible from the first boot
-              to your daily workflow.
+              XFCE, tuned and packaged deliberately, so the system feels
+              light on hardware that isn't brand new.
             </p>
           </article>
         </div>
@@ -104,12 +88,10 @@
       <section class="cta-band" aria-labelledby="cta-title">
         <div class="page-width cta-content">
           <div>
-            <p class="eyebrow">START HERE</p>
-            <h2 id="cta-title">Make your machine feel like yours.</h2>
+            <p class="label">Start here</p>
+            <h2 id="cta-title">Boot it, and see how it's built.</h2>
           </div>
-          <a class="button button-light" href="download.html"
-            >Explore downloads <span aria-hidden="true">&rarr;</span></a
-          >
+          <a class="button button-outline" href="download.html">Explore downloads</a>
         </div>
       </section>
     </main>
