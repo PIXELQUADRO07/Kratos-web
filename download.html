@@ -4,6 +4,19 @@
     <title>Downloads | Kratos OS</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Download Kratos OS installation images and browse its .kpkg package repository."
+    />
+    <link rel="icon" type="image/png" href="assets/img/KratosOS.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Downloads | Kratos OS" />
+    <meta
+      property="og:description"
+      content="Download Kratos OS installation images and browse its .kpkg package repository."
+    />
+    <meta property="og:image" content="assets/img/KratosOS.png" />
+    <meta name="twitter:card" content="summary" />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
@@ -34,23 +47,9 @@
         class="download-layout page-width"
         aria-label="Kratos OS downloads"
       >
-        <article class="download-card featured">
-          <div>
-            <span class="label">Latest image</span>
-            <h2>Kratos OS x86_64</h2>
-            <p>
-              The installable image for modern 64-bit systems. Boot it from a
-              USB drive to begin.
-            </p>
-          </div>
-          <div class="download-meta">
-            <span>Architecture <b>x86_64</b></span
-            ><span>Channel <b>Stable</b></span>
-          </div>
-          <span class="button button-primary disabled" aria-disabled="true"
-            >ISO coming soon</span
-          >
-        </article>
+        <div id="iso-releases" class="iso-releases" aria-live="polite">
+          <p class="package-status">Loading available images…</p>
+        </div>
         <article class="download-card">
           <span class="label">Package repository</span>
           <h2>Packages</h2>
@@ -59,9 +58,7 @@
             repository.
           </p>
           <a class="text-link" href="packages.html">Browse package details</a>
-          <p class="small-note" style="margin-top: 18px">
-            The repository is being prepared for its first public release.
-          </p>
+          <p id="download-package-count" class="small-note" style="margin-top: 18px"></p>
         </article>
       </section>
       <section class="verify-strip page-width" aria-labelledby="verify-title">
@@ -81,5 +78,6 @@
       <p>Open source, built with intent.</p>
       <p>&copy; 2026 Kratos OS</p>
     </footer>
+    <script src="assets/js/download.js" defer></script>
   </body>
 </html>

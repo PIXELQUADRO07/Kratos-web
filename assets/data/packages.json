@@ -1,0 +1,50 @@
+{
+  "$schema": "Kratos OS package manifest. Add one object per package to publish it on the Packages page.",
+  "updated": "2026-09-04",
+  "packages": [
+    {
+      "name": "wpa_supplicant",
+      "version": "2.12",
+      "category": "network",
+      "description": "Wi-Fi and wired 802.1X supplicant used for network authentication.",
+      "arch": "x86_64",
+      "size": "1.4 MB",
+      "updated": "2026-09-01",
+      "file": "downloads/packages/wpa_supplicant-2.12-x86_64.kpkg",
+      "sha256": "REPLACE_WITH_REAL_SHA256"
+    },
+    {
+      "name": "kpm",
+      "version": "1.3.0",
+      "category": "core",
+      "description": "Kratos Package Manager: the in-house fetcher, installer and repository client.",
+      "arch": "x86_64",
+      "size": "620 KB",
+      "updated": "2026-08-27",
+      "file": "downloads/packages/kpm-1.3.0-x86_64.kpkg",
+      "sha256": "REPLACE_WITH_REAL_SHA256"
+    },
+    {
+      "name": "xfce4-session",
+      "version": "4.18",
+      "category": "desktop",
+      "description": "Session manager for the XFCE desktop environment.",
+      "arch": "x86_64",
+      "size": "310 KB",
+      "updated": "2026-08-20",
+      "file": "downloads/packages/xfce4-session-4.18-x86_64.kpkg",
+      "sha256": "REPLACE_WITH_REAL_SHA256"
+    },
+    {
+      "name": "openssh",
+      "version": "9.8p1",
+      "category": "network",
+      "description": "SSH client and server for secure remote access.",
+      "arch": "x86_64",
+      "size": "2.1 MB",
+      "updated": "2026-08-15",
+      "file": "downloads/packages/openssh-9.8p1-x86_64.kpkg",
+      "sha256": "REPLACE_WITH_REAL_SHA256"
+    }
+  ]
+}

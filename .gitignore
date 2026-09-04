@@ -1,1 +1,6 @@
 public/
+
+# published binary artifacts — host these separately (releases page, CDN, etc.)
+# and reference them from assets/data/packages.json / releases.json
+downloads/packages/*.kpkg
+downloads/iso/*.iso

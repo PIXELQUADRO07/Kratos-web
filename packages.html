@@ -4,6 +4,19 @@
     <title>Packages | Kratos OS</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Browse and search the .kpkg package repository for Kratos OS."
+    />
+    <link rel="icon" type="image/png" href="assets/img/KratosOS.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Packages | Kratos OS" />
+    <meta
+      property="og:description"
+      content="Browse and search the .kpkg package repository for Kratos OS."
+    />
+    <meta property="og:image" content="assets/img/KratosOS.png" />
+    <meta name="twitter:card" content="summary" />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
@@ -31,14 +44,7 @@
         </p>
       </section>
       <section class="package-overview page-width">
-        <article class="download-card featured">
-          <span class="label">Stable / x86_64</span>
-          <h2>Repository in preparation</h2>
-          <p>
-            The public repository is being prepared for the first Kratos OS
-            release. Package indexes and signing information will appear here
-            when available.
-          </p>
+        <div class="repository-summary">
           <dl class="repository-details">
             <div>
               <dt>Channel</dt>
@@ -49,11 +55,32 @@
               <dd>x86_64</dd>
             </div>
             <div>
-              <dt>Status</dt>
-              <dd>Coming soon</dd>
+              <dt>Format</dt>
+              <dd>.kpkg</dd>
             </div>
           </dl>
-        </article>
+          <p id="package-count" class="small-note" aria-live="polite"></p>
+        </div>
+        <div class="package-toolbar">
+          <input
+            type="search"
+            id="package-search"
+            class="package-search"
+            placeholder="Search packages…"
+            aria-label="Search packages"
+          />
+          <select
+            id="package-category"
+            class="package-filter"
+            aria-label="Filter by category"
+          >
+            <option value="">All categories</option>
+          </select>
+        </div>
+        <p id="package-status" class="small-note" aria-live="polite"></p>
+        <div id="package-grid" class="package-grid" aria-live="polite">
+          <p class="package-empty">Loading packages…</p>
+        </div>
       </section>
       <section
         class="verify-strip page-width"
@@ -75,5 +102,6 @@
       <p>Open source, built with intent.</p>
       <p>&copy; 2026 Kratos OS</p>
     </footer>
+    <script src="assets/js/packages.js" defer></script>
   </body>
 </html>

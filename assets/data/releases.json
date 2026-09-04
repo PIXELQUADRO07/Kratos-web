@@ -1,0 +1,16 @@
+{
+  "$schema": "Kratos OS release manifest. Add one object per ISO image to publish it on the Downloads page.",
+  "updated": "2026-09-04",
+  "releases": [
+    {
+      "channel": "Stable",
+      "arch": "x86_64",
+      "version": "0.9.7",
+      "date": "2026-09-02",
+      "size": "1.1 GB",
+      "status": "coming-soon",
+      "file": "downloads/iso/kratos-os-0.9.7-x86_64.iso",
+      "sha256": ""
+    }
+  ]
+}

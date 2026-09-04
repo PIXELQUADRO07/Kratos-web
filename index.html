@@ -8,6 +8,15 @@
       name="description"
       content="Kratos OS is a Linux distribution cross-compiled from source, with its own package manager and download client written in plain C."
     />
+    <link rel="icon" type="image/png" href="assets/img/KratosOS.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Kratos OS | Built from source, piece by piece" />
+    <meta
+      property="og:description"
+      content="Kratos OS is a Linux distribution cross-compiled from source, with its own package manager and download client written in plain C."
+    />
+    <meta property="og:image" content="assets/img/KratosOS.png" />
+    <meta name="twitter:card" content="summary" />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
@@ -91,7 +100,10 @@
             <p class="label">Start here</p>
             <h2 id="cta-title">Boot it, and see how it's built.</h2>
           </div>
-          <a class="button button-outline" href="download.html">Explore downloads</a>
+          <div class="cta-actions">
+            <a class="button button-outline" href="download.html">Explore downloads</a>
+            <p id="home-package-count" class="small-note" aria-live="polite"></p>
+          </div>
         </div>
       </section>
     </main>
@@ -104,5 +116,6 @@
       <p>Open source, built with intent.</p>
       <p>&copy; 2026 Kratos OS</p>
     </footer>
+    <script src="assets/js/home.js" defer></script>
   </body>
 </html>
